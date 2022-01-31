@@ -1,10 +1,10 @@
 
 function toQuery() {
-  window.location = 'Query.html';
+  window.location = 'file:///C:/Users/Serban/Desktop/Notes/Query.html';
 }
 
 function toNotes() {
- window.location = 'index.html';
+ window.location = 'file:///C:/Users/Serban/Desktop/Notes/Page.html';
 }
 
 function extractData() {
@@ -54,24 +54,26 @@ function printData() {
       o.forEach( function(o) {
         var note = document.createElement("div");
         note.className = "note";
-        var title = document.createElement("p");
+        var postit = document.createElement("div");
+        postit.className = "post";
+        var title = document.createElement("h3");
         title.className = "title";
         title.innerHTML = o.title;
-        note.appendChild(title);
+        postit.appendChild(title);
         var date = document.createElement("p");
         date.className = "date";
         date.innerText = o.date;
         var d = o.date;
-        note.appendChild(date);
+        postit.appendChild(date);
         var content = document.createElement("p");
         content.className = "content";
         content.innerText = o.content; 
-        note.appendChild(content); 
+        postit.appendChild(content); 
         var del = document.createElement("button");
         del.className = "delete";
         del.innerText = "X";
         del.onclick = function () { deleteData(o.date); };
-        del.style="float: right;";
+        note.appendChild(postit);
         note.appendChild(del);
         notebook.appendChild(note);
       })
