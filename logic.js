@@ -1,10 +1,10 @@
 
 function toQuery() {
-  window.location = 'file:///C:/Users/Serban/Desktop/Notes/Query.html';
+  window.location = 'Query.html';
 }
 
 function toNotes() {
- window.location = 'file:///C:/Users/Serban/Desktop/Notes/Page.html';
+ window.location = 'index.html';
 }
 
 function extractData() {
