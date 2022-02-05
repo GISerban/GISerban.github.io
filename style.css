@@ -11,6 +11,13 @@
   .text_entry {
    width: 60%;
   }
+  
+  .query_button {
+    padding: 5px 12px ;
+    font-weight: bold;
+    background: #f2f2f2;
+    font-size: 20px;
+   }
 }
 
 body {
@@ -52,6 +59,13 @@ textarea {
 }
 
 .add_button {
+    padding: 5px 12px ;
+    font-weight: bold;
+    background: #f2f2f2;
+    font-size: 17px;
+}
+
+.query_button {
     padding: 5px 12px ;
     font-weight: bold;
     background: #f2f2f2;
